@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<title>форма</title>
+  	<link rel="stylesheet" href="1.css">
+</head>
+	<body>
+		<div class="form-wrap">
+		  <div class="profile"><img src="profile-image.png">
+		    <h1>Регистрация</h1>
+		  </div>
+		  <form method="post" action="form.php">
+		  	<div>
+		  		<label for="name">Имя</label>
+		  		<input type="text" name="name" required>
+		  	</div>
+		  	<div>
+		  		<label for="name">Пароль</label>
+		  		<input type="password" name="name" required minlength="8" maxlength="s12">
+		  	</div>
+			<div>
+				<label for="name">Уровень защиты вашего аккаунта</label>
+				<input type="range" min="0" max="100" step="1" value="50">
+			</div>
+			  <div>
+				  <label for="name">Телеф</label>
+				  <input name="tel1" type="tel" pattern="[0-9]{12}" placeholder="+380-123-456-789" aria-label="3-digit area code" size="2" />
+		  	</div>
+			  <div>
+				  <label for="name">Телеф</label>
+				  <input name="tel1" type="tel" pattern="[0-9]{12}" placeholder="+380-123-456-789" aria-label="3-digit area code" size="2" />
+		  	</div>
+			  <div>
+			  	<label for="date">Дата рождения: </label>
+			  	<input type="date" id="date" name="date" />
+			  </div>
+		  	<div class="radio">
+		  		<span>Пол</span>
+		  		<label>
+		  			<input type="radio" name="sex" value="мужской">мужской
+		  			<div class="radio-control male"></div>
+		  		</label>
+		  		<label>
+		  			<input type="radio" name="sex" value="женский">женский
+		  			<div class="radio-control female"></div>
+		  		</label>
+		  	</div>
+		  	<div>
+		  		<label for="email">E-mail</label>
+		  		<input type="email" name="email" required>
+		  	</div>
+		  	<div>
+		  		<label for="country">Страна</label>
+		  		<select name="country">
+		  			<option>Выберите страну проживания</option>
+		  			<option value="Россия">Россия</option>
+		  			<option value="Украина">Украина</option>
+		  			<option value="Беларусь">Беларусь</option>
+		  		</select>
+		  		<div class="select-arrow"></div>
+		  	</div>
+		  	<button type="submit">Отправить</button>
+		  </form> 
+		</div>
+	</body>
+</html>
